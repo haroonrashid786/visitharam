@@ -1,0 +1,851 @@
+@font-face {
+    font-family: monrope;
+    src: url("../fonts/Manrope/Manrope-Regular.ttf");
+}
+
+@font-face {
+    font-family: outfit;
+    src: url("../fonts/Outfit/Outfit-Regular.ttf");
+}
+
+@font-face {
+    font-family: monrope-bold;
+    src: url("../fonts/Manrope/Manrope-Bold.ttf");
+}
+
+html {
+    font-family: monrope;
+    color: #23272c;
+}
+
+.font-bold {
+    font-family: monrope-bold;
+}
+
+.nav_item {
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.nav_item::after {
+    content: "";
+}
+
+.font-outfit {
+    font-family: outfit;
+}
+
+@media screen and (max-width: 690px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+.nav_item {
+    cursor: pointer;
+}
+
+.bg-overlay {
+    background-image: url("../images/banner-overlay.png");
+    background-size: cover;
+    background-position: left top;
+}
+
+.bg-contact {
+    background-image: url("../images/contact-us.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.bg-overlay {
+    position: relative;
+}
+
+.bg-buildings {
+    position: absolute;
+    background-image: url("../images/building.png");
+    height: 22rem;
+    width: 120%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: translateY(-30%);
+}
+
+.banner_animation .banner_svg {
+    position: absolute;
+}
+
+.banner_svg.van {
+    height: 25.5em;
+    width: 30.875em;
+    top: 0;
+}
+
+.banner_svg.large-couch {
+    height: 14.125em;
+    width: 18.5em;
+    bottom: 0;
+    left: 41%;
+}
+
+.banner_svg.small-couch {
+    width: 11.5em;
+    height: 9.9375em;
+    bottom: 8em;
+}
+
+.banner_svg.boxes {
+    width: 9.8125em;
+    height: 10.4375em;
+    bottom: 0em;
+    left: 15%;
+}
+
+.banner_svg.closet {
+    width: 10.25em;
+    height: 16.3125em;
+    top: 5em;
+    right: 0;
+}
+
+.banner_animation {
+    z-index: 3;
+    position: relative;
+    height: 36.5rem;
+}
+
+.navbar_scroll {
+    background-color: #fffaf2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#navbar {
+    transition: 0.2s ease-in;
+}
+
+.hover_card {
+    color: #23272c;
+    background-color: #fff;
+    transition: 0.25s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hover_card:hover {
+    color: #fff;
+    background-color: #007afe;
+    transform: translateY(-5%);
+}
+
+.hover_card path,
+.hover_card rect {
+    transition: 0.25s ease-in;
+}
+
+.hover_card:hover path,
+.hover_card:hover rect {
+    fill: #fff;
+}
+
+.hover_card:hover path.fill_only {
+    fill: #007afe;
+}
+
+.video_banner_p:hover .grid-play-btn .pause {
+    opacity: 1;
+}
+
+.video_banner_p .grid-play-btn .pause {
+    opacity: 0;
+}
+
+.render_html h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.render_html h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.render_html h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.render_html p {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+.render_html img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    margin: 2rem 0;
+}
+
+.render_html strong {
+    font-weight: bold;
+}
+
+.render_html em {
+    font-style: italic;
+}
+
+.render_html u {
+    text-decoration: underline;
+}
+
+.render_html del {
+    text-decoration: line-through;
+}
+
+.render_html a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.not-found-grid {
+    grid-column: 1/-1;
+}
+
+.parent-hover {}
+
+.input-label {
+    font-size: 0.8rem
+        /* 14px */
+    ;
+    line-height: 1.25rem
+        /* 20px */
+    ;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem
+        /* 4px */
+    ;
+    color: #8e96a0;
+}
+
+.input:focus {
+    border-color: #5679ff;
+    border-left: 0.375rem solid #5679ff;
+}
+
+.error:focus {
+    border-color: red;
+    border-left: 0.375rem solid red;
+    @apply ring-0;
+}
+
+.input {
+    border: 1px solid #ddd;
+    border-radius: 0.375rem
+        /* 6px */
+    ;
+    font-size: 0.875rem
+        /* 14px */
+    ;
+    line-height: 1.25rem
+        /* 20px */
+    ;
+    outline: none;
+    padding-left: 0.5rem
+        /* 8px */
+    ;
+    padding-right: 0.5rem
+        /* 8px */
+    ;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+@media (min-width: 1024px) {
+    .input {
+        padding-left: 1rem
+            /* 16px */
+        ;
+        padding-right: 1rem
+            /* 16px */
+        ;
+    }
+}
+
+.input:disabled {
+    cursor: not-allowed;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem
+        /* 8px */
+    ;
+    position: relative;
+}
+
+.btn {
+    white-space: nowrap;
+    border-radius: 0.5rem
+        /* 8px */
+    ;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem
+        /* 12px */
+    ;
+    color: white;
+    padding-left: 1.5rem
+        /* 24px */
+    ;
+    padding-right: 1.5rem
+        /* 24px */
+    ;
+    padding-top: 0.5rem
+        /* 8px */
+    ;
+    padding-bottom: 0.5rem
+        /* 8px */
+    ;
+    width: fit-content;
+    background-color: #101928;
+}
+
+.counter_decrement,
+.counter_increment {
+    cursor: pointer;
+}
+
+.dropdown-body-css {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-radius: 0.5rem
+        /* 8px */
+    ;
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+        0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    width: max-content;
+    padding-top: 0.5rem
+        /* 8px */
+    ;
+    padding-bottom: 0.5rem
+        /* 8px */
+    ;
+}
+
+.dropdown-opener-css {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+    padding-left: 0.75rem
+        /* 12px */
+    ;
+    padding-right: 0.75rem
+        /* 12px */
+    ;
+    position: relative;
+    transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    color: rgb(80 80 80);
+}
+
+.dropdown-opener-css:hover {
+    color: black;
+    background-color: #cce4ff;
+}
+
+.dropdown-body-child-css {
+    background-color: white;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    max-height: 10rem;
+    overflow-x: auto;
+    border-radius: 0.5rem
+        /* 8px */
+    ;
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+        0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    width: max-content;
+    padding-top: 0.5rem
+        /* 8px */
+    ;
+    padding-bottom: 0.5rem
+        /* 8px */
+    ;
+}
+
+.dropdown-body {
+    display: none;
+    z-index: 201;
+}
+
+.dropdown-opener:hover>.dropdown-body {
+    display: block;
+}
+
+input:checked+.check_radio {
+    color: #fff;
+    background-color: #007afe !important;
+}
+
+body:has(.no_navbar) #navbar,
+body:has(.no_navbar) .footer_Wrapper {
+    display: none;
+}
+
+.bg_login {
+    background-image: linear-gradient(180deg,
+            rgba(0, 122, 254, 0.1) 18.23%,
+            rgba(0, 122, 254, 0.95) 83.85%),
+        url("../images/login_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+.hover-delete {
+    position: relative;
+}
+
+.hover-delete:hover::after {
+    display: flex;
+}
+
+.hover-delete::after {
+    content: "x";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: red;
+    display: none;
+    transform: translate(50%, -50%);
+}
+
+.child_hover {
+    display: none;
+}
+
+.parent_hover:checked~.child_hover {
+    display: block;
+}
+
+.parent_hover:checked~.self {
+    background-color: #cce4ff;
+    display: block;
+}
+
+.flatpickr-input {
+    font-size: 0.75rem;
+}
+
+.mulitple.flatpickr-input {
+    width: 25ch;
+    font-size: 0.75rem;
+}
+
+body:has(#ASAP:checked) .specific_section {
+    display: none !important;
+}
+
+body:has(#flexible:checked) .specific_section {
+    display: none !important;
+}
+
+body:has(#need_any_help:checked) .need_help_parent {
+    display: grid !important;
+}
+
+body:has(.step_one:not(.hidden)) .step_show_one {
+    background-color: #007afe !important;
+}
+
+.error {
+    border-color: red !important;
+}
+
+input[type="date"] {
+    /* opacity: 0; */
+}
+
+.step_top.active {
+    border-color: #007afe;
+}
+
+.step_top.active .circle {
+    background-color: #007afe;
+}
+
+.bg_profile {
+    background: linear-gradient(90deg, #f0f7ff 13.54%, #ffeded 85.42%);
+}
+
+.line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.type_btn {
+    background-color: #F32424 !important;
+}
+
+
+.type_btn_decline {
+    background-color: #F89191 !important;
+}
+
+.type_btn_decline circle {
+    background-color: #F32424 !important;
+}
+
+.type_btn_text_Decline {
+    color: #F32424;
+}
+
+.type_btn circle {
+    fill: #f4ae44;
+}
+
+.type_btn_New {
+    background-color: #C0E2FF !important;
+}
+
+.type_btn_New circle {
+    fill: #068FFF;
+}
+
+.type_btn_text_New {
+    color: #068FFF;
+}
+
+.type_btn_Completed {
+    background-color: #B1ECB8 !important;
+}
+
+.type_btn_Completed circle {
+    fill: #00B216;
+}
+
+.type_btn_text_Completed  {
+    color: #00B216;
+}
+
+.type_btn_Assigned {
+    background-color: #FFCE93 !important;
+}
+
+.type_btn_Assigned circle {
+    fill: #FF9F29;
+}
+
+.type_btn_text_Assigned {
+    color: #FF9F29;
+}
+
+.type_btn_Cancelled {
+    background-color: #ffe4e4 !important;
+}
+
+.type_btn_Cancelled circle {
+    fill: #ff0d0d;
+}
+
+.type_btn_text_Cancelled  {
+    color: #ff0d0d;
+}
+
+.type_btn_Waiting {
+    background-color: #B6B3F4 !important;
+}
+
+.type_btn_Waiting circle {
+    fill: #4942E4;
+}
+
+.type_btn_text_Waiting  {
+    color: #4942E4;
+}
+
+
+
+
+
+.unread {
+    position: relative;
+    background-color: #eee;
+}
+
+.unread::after {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 1000px;
+    background: #007afe;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swal2-container {
+    z-index: 99999 !important;
+}
+
+.dashboard-tab:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+.dashboard-tab {
+    transition-duration: 0.2s;
+    border-radius: 7px;
+    min-width: max-content;
+}
+
+.dashboard-tab-active {
+    background-color: #007bfe30 !important;
+}
+
+/* Define the scrollbar track */
+::-webkit-scrollbar {
+    width: 7px;
+    /* Set the width of the scrollbar */
+}
+
+div * ::-webkit-scrollbar {
+    width: 4px;
+    /* Set the width of the scrollbar */
+    height: 4px;
+}
+
+/* Define the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #007afe;
+    /* Set the scrollbar color */
+    border-radius: 12px;
+    /* Set rounded borders */
+}
+
+/* Define the scrollbar track for Firefox */
+/* Firefox supports scrollbar customization using a pseudo-element */
+* {
+    scrollbar-width: thin;
+    /* Set the width of the scrollbar */
+    scrollbar-color: #007afe transparent;
+    /* Set the scrollbar color */
+}
+
+/* Define the scrollbar thumb for Firefox */
+*::-webkit-scrollbar-thumb {
+    background-color: #007afe;
+    /* Set the scrollbar color */
+    border-radius: 12px;
+    /* Set rounded borders */
+}
+
+.parent_css_section .bg-contact {
+    background-image: none;
+}
+
+.parent_css_section .child {
+    width: 100% !important;
+    border: 1px solid #e5e7eb;
+}
+
+.parent_css_section .child_css_section {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Create the loader using ::before */
+button::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    background-color: #81bcff;
+    display: none;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+    /* Hide the loader by default */
+}
+
+/* Show the loader on disabled buttons */
+button:not(.no_loading):disabled::after {
+    display: block;
+}
+
+button:not(.no_loading):disabled::before {
+    display: block;
+}
+
+/* Keyframes animation for the loader */
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.back {
+    cursor: pointer;
+}
+
+.overlay_body img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: contain;
+}
+
+.overlay_body {
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff59;
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999999;
+}
+
+
+/* Pagination Style Global */
+.pagination {
+    text-align: center;
+}
+
+.pagination .page-item {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.pagination .page-link {
+    color: #3366CC;
+    border: 1px solid #3366CC;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.pagination .page-link:hover {
+    background-color: #3366CC;
+    color: #fff;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #3366CC;
+    color: #fff;
+    border-color: #3366CC;
+}
+
+/* Pagination Style Global */
+
+input[type=file] {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+    padding-right: 0.125rem;
+    padding-left: 0.125rem;
+}
+
+input[type=file]::file-selector-button {
+    background-color: #007AFE;
+    border-radius: 0.375rem;
+    margin-left: 0.01rem !important;
+    font-weight: normal !important;
+
+}
+
+.img_overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.img_overlay::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    background-image: url('https://i.gifer.com/ZZ5H.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    width: 40px;
+}
+.img_overlay::before {
+    content: '';
+    inset: 0;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    border-radius: 15px;
+}

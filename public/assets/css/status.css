@@ -1,0 +1,80 @@
+    .type_btn {
+    background-color: #F32424 !important;
+}
+
+
+.type_btn_decline {
+    background-color: #F89191 !important;
+}
+
+.type_btn_decline circle {
+    background-color: #F32424 !important;
+}
+
+.type_btn_text_Decline {
+    color: #000000;
+}
+
+.type_btn circle {
+    fill: #f4ae44;
+}
+
+.type_btn_New {
+    background-color: #C0E2FF !important;
+}
+
+.type_btn_New circle {
+    fill: #068FFF;
+}
+
+.type_btn_text_New {
+    color: #000000;
+}
+
+.type_btn_Completed {
+    background-color: #B1ECB8 !important;
+}
+
+.type_btn_Completed circle {
+    fill: #00B216;
+}
+
+.type_btn_text_Completed  {
+    color: #000000;
+}
+
+.type_btn_Assigned {
+    background-color: #FFCE93 !important;
+}
+
+.type_btn_Assigned circle {
+    fill: #FF9F29;
+}
+
+.type_btn_text_Assigned {
+    color: #000000;
+}
+
+.type_btn_Cancelled {
+    background-color: #ffe4e4 !important;
+}
+
+.type_btn_Cancelled circle {
+    fill: #ff0d0d;
+}
+
+.type_btn_text_Cancelled  {
+    color: #000000;
+}
+
+.type_btn_Waiting {
+    background-color: #B6B3F4 !important;
+}
+
+.type_btn_Waiting circle {
+    fill: #4942E4;
+}
+
+.type_btn_text_Waiting  {
+    color: #000000;
+}
